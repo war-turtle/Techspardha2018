@@ -1,0 +1,39 @@
+.boat-1 {
+    fill: #0d536b;
+    opacity: 0.85;
+}
+
+.boat-1,
+.boat-8 {
+    isolation: isolate;
+}
+
+.boat-2 {
+    fill: #063a52;
+}
+
+.boat-3 {
+    fill: #d00c01;
+}
+
+.boat-4,
+.boat-8 {
+    fill: #fff;
+}
+
+.boat-5 {
+    fill: #a5a5a5;
+}
+
+.boat-6 {
+    fill: #babcbe;
+}
+
+.boat-7 {
+    fill: #e4e5e6;
+}
+
+.boat-8 {
+    font-size: 45.05px;
+    font-family: HanaleiFill-Regular, Hanalei Fill;
+}

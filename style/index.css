@@ -76,6 +76,14 @@ body {
     left: 0;
 }
 
+#boat {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    bottom: 0;
+    right: 0;
+}
+
 @media screen and (max-width: 720px) {
     #lighthouseSvg {
         position: absolute;
