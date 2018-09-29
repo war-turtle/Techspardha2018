@@ -59,6 +59,23 @@ body {
     transform: translate(-50%, -50%);
 }
 
+#sky {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    bottom: 40%;
+    left: 0;
+    margin: 50px;
+}
+
+#sea {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 60%;
+    left: 0;
+}
+
 @media screen and (max-width: 720px) {
     #lighthouseSvg {
         position: absolute;
