@@ -4,6 +4,7 @@ window.addEventListener("DOMContentLoaded", function() {
     startAnimation();
     lightAnimation();
     primeAnimation();
+    cloudAnimation();
 });
 
 function calculateLightHousePosition() {
@@ -58,4 +59,22 @@ function primeAnimation() {
     var time = new TimelineMax({ repeat: -1 });
 
     time.to("#prime", 10, { opacity: 0, ease: Bounce.easeOut });
+}
+
+function cloudAnimation() {
+    var time = new TimelineMax({ repeat: -1 });
+
+    time.set("#cloud1", { y: "-=100%" });
+
+    time.to("#cloud1", 30, { x: "+=300%" });
+    time.to("#cloud1", 30, { x: "-=300%" });
+
+    time.to("#cloud2", 30, { x: "-=200%" }, "30");
+    time.to("#cloud2", 30, { x: "+=200%" }, "60");
+
+    time.to("#cloud3", 30, { x: "+=50%" }, "0");
+    time.to("#cloud3", 30, { x: "-=50%" }, "30");
+
+    time.to("#cloud4", 30, { x: "+=150%" }, "0");
+    time.to("#cloud4", 30, { x: "-=150%" }, "30");
 }
