@@ -1,10 +1,11 @@
 window.addEventListener("DOMContentLoaded", function() {
     calculateLightHousePosition();
     boatAnimation();
-    startAnimation();
+    starAnimation();
     lightAnimation();
     primeAnimation();
     cloudAnimation();
+    // boatTwoAnimation();
 });
 
 function calculateLightHousePosition() {
@@ -26,7 +27,7 @@ function boatAnimation() {
     time.to(boat, 5, { rotationZ: "+=3deg" });
 }
 
-function startAnimation() {
+function starAnimation() {
     var time = new TimelineMax({ repeat: -1 });
     time.staggerTo("#star11 > path", 0.5, { opacity: 0 }, 0.05, "0");
     time.staggerTo("#star11 > path", 0.5, { opacity: 1 }, 0.05, "1");
@@ -78,3 +79,7 @@ function cloudAnimation() {
     time.to("#cloud4", 30, { x: "+=150%" }, "0");
     time.to("#cloud4", 30, { x: "-=150%" }, "30");
 }
+
+// function boatTwoAnimation() {
+//     TweenMax.to("#boat2", 1, { opacity: 0 });
+// }
