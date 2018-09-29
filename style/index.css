@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 .main {
@@ -78,10 +79,10 @@ body {
 
 #boat {
     position: absolute;
-    width: 50%;
+    width: 30%;
     height: auto;
-    bottom: 0;
-    right: 0;
+    bottom: 10%;
+    left: 100%;
 }
 
 @media screen and (max-width: 720px) {
@@ -126,5 +127,10 @@ body {
         height: auto;
         top: 15%;
         left: 0;
+    }
+
+    #boat {
+        width: 50%;
+        bottom: 20%;
     }
 }
