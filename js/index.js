@@ -2,6 +2,7 @@ window.addEventListener("DOMContentLoaded", function() {
     calculateLightHousePosition();
     boatAnimation();
     startAnimation();
+    lightAnimation();
 });
 
 function calculateLightHousePosition() {
@@ -41,4 +42,13 @@ function startAnimation() {
     time.staggerTo("#star41 > path", 0.5, { opacity: 1 }, 0.05, "1");
     time.staggerTo("#star42 > path", 0.5, { opacity: 0 }, 0.05, "0");
     time.staggerTo("#star42 > path", 0.5, { opacity: 1 }, 0.05, "1");
+}
+
+function lightAnimation() {
+    var time = new TimelineMax({ repeat: -1 });
+    time.to("#light", 5, { scaleX: "0", ease: Power0.easeNone });
+
+    time.to("#light", 5, { scaleX: "-1", ease: Power0.easeNone });
+    time.to("#light", 5, { scaleX: "0", ease: Power0.easeNone });
+    time.to("#light", 5, { scaleX: "1", ease: Power0.easeNone });
 }
