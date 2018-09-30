@@ -216,12 +216,12 @@ body {
 
     #GAWDSLink > span {
         /* width: 20px; */
-        font-size: 22px;
+        font-size: 18px;
     }
 
     #GAWDSLink_svg {
         display: block;
-        width: 6rem;
+        width: 4rem;
         height: auto;
         fill: #fff;
     }
