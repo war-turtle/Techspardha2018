@@ -122,6 +122,30 @@ body {
     will-change: transform;
 }
 
+#GAWDSLink {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 1rem;
+    z-index: 102;
+    font-family: CoveredByYourGrace, Covered By Your Grace;
+    text-decoration: none;
+    color: #ffde75;
+}
+
+#GAWDSLink > span {
+    /* width: 20px; */
+    font-size: 27px;
+}
+
+#GAWDSLink_svg {
+    display: block;
+    width: 8rem;
+    height: auto;
+    fill: #fff;
+    z-index: 102;
+}
+
 @media screen and (max-width: 720px) {
     body,
     html {
@@ -184,39 +208,23 @@ body {
     }
     #GAWDSLink {
         position: fixed;
-        bottom: 3.5rem;
+        bottom: 1rem;
         right: 1rem;
         font-size: 1rem;
-        font-family: "Roboto", sans-serif;
+        font-family: CoveredByYourGrace, Covered By Your Grace;
     }
+
+    #GAWDSLink > span {
+        /* width: 20px; */
+        font-size: 22px;
+    }
+
     #GAWDSLink_svg {
         display: block;
-        width: 4rem;
+        width: 6rem;
         height: auto;
         fill: #fff;
     }
 }
 
-#GAWDSLink {
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-    font-size: 1rem;
-    z-index: 102;
-    font-family: CoveredByYourGrace, Covered By Your Grace;
-    text-decoration: none;
-    color: #ffde75;
-}
-svg {
-    display: block;
-    width: 12.8rem;
-    height: auto;
-    fill: $Yellow;
-}
-#GAWDSLink svg {
-    display: block;
-    width: 8rem;
-    height: auto;
-    fill: #fff;
-    z-index: 102;
-}
+
