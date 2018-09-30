@@ -1,12 +1,40 @@
 window.addEventListener("DOMContentLoaded", function() {
     calculateLightHousePosition();
+    loader();
+});
+
+function animation() {
+    TweenMax.set(".loader", { display: "none" });
+
     boatAnimation();
     starAnimation();
     lightAnimation();
-    // primeAnimation();
     cloudAnimation();
-    // boatTwoAnimation();
-});
+}
+
+function loader() {
+    var time = new TimelineMax();
+    time.to("#wheel", 2, {
+        rotationZ: "360deg",
+        transformOrigin: "center center"
+    });
+
+    time.to("#wheel", 2, {
+        rotationZ: "0deg",
+        transformOrigin: "center center"
+    });
+
+    time.to("#wheel", 2, {
+        rotationZ: "360deg",
+        transformOrigin: "center center"
+    });
+
+    time.to("#wheel", 2, {
+        rotationZ: "0deg",
+        transformOrigin: "center center",
+        onComplete: animation
+    });
+}
 
 function calculateLightHousePosition() {
     var seaTop = document

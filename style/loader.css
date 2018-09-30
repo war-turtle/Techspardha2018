@@ -1,0 +1,36 @@
+.loader-1 {
+    font-size: 21px;
+}
+
+.loader-1,
+.loader-2,
+.loader-3 {
+    fill: #fff;
+}
+
+.loader-1,
+.loader-4 {
+    font-family: Ubuntu;
+}
+
+.loader-2 {
+    font-size: 23px;
+    font-family: Ubuntu;
+}
+
+.loader-4 {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+.loader-4,
+.loader-5 {
+    fill: #052844;
+}
+
+.loader-6 {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+}
