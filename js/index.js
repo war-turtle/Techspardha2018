@@ -86,12 +86,6 @@ function lightAnimation() {
     time.to("#light", 5, { scaleX: "1", ease: Power0.easeNone });
 }
 
-function primeAnimation() {
-    var time = new TimelineMax({ repeat: -1 });
-
-    time.to("#prime", 10, { opacity: 0, ease: Bounce.easeOut });
-}
-
 function cloudAnimation() {
     var time = new TimelineMax({ repeat: -1 });
 
@@ -109,7 +103,3 @@ function cloudAnimation() {
     time.to("#cloud4", 30, { x: "+=150%" }, "0");
     time.to("#cloud4", 30, { x: "-=150%" }, "30");
 }
-
-// function boatTwoAnimation() {
-//     TweenMax.to("#boat2", 1, { opacity: 0 });
-// }

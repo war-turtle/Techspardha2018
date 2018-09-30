@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300');
-body, html {
+body,
+html {
+    overflow: hidden !important;
+    max-width: 100%;
+}
+
+body {
     margin: 0;
     padding: 0;
-    overflow: hidden !important;
 }
 
 .loader {
@@ -55,6 +59,7 @@ body, html {
     height: auto;
     left: 50%;
     transform: translate(-50%, 0);
+    will-change: all;
 }
 
 #starSvg1 {
@@ -63,12 +68,14 @@ body, html {
     height: auto;
     top: 0;
     left: 0;
+    will-change: opacity;
 }
 
 #starSvg2,
 #starSvg3,
 #starSvg4 {
     display: none;
+    will-change: opacity;
 }
 
 #clouds {
@@ -78,6 +85,7 @@ body, html {
     left: 50%;
     top: 30%;
     transform: translate(-50%, -50%);
+    will-change: transform;
 }
 
 #sky {
@@ -103,20 +111,31 @@ body, html {
     height: auto;
     bottom: 10%;
     left: 100%;
+    will-change: all;
+}
+
+#wheel {
+    will-change: all;
+}
+
+#light {
+    will-change: transform;
 }
 
 @media screen and (max-width: 720px) {
-    body, html {
-        margin: 0;
-        padding: 0;
+    body,
+    html {
         overflow: hidden !important;
+        max-width: 100%;
     }
+
     #lighthouseSvg {
         position: absolute;
         width: 100%;
         height: auto;
         left: 50%;
         transform: translate(-50%, 0);
+        will-change: all;
     }
 
     #starSvg1 {
@@ -125,6 +144,7 @@ body, html {
         height: auto;
         top: 30%;
         left: 0;
+        will-change: opacity;
     }
 
     #starSvg2 {
@@ -134,6 +154,7 @@ body, html {
         height: auto;
         bottom: 40%;
         left: 0;
+        will-change: opacity;
     }
 
     #starSvg3 {
@@ -143,6 +164,7 @@ body, html {
         height: auto;
         top: 0;
         left: 0;
+        will-change: opacity;
     }
 
     #starSvg4 {
@@ -152,25 +174,27 @@ body, html {
         height: auto;
         top: 15%;
         left: 0;
+        will-change: opacity;
     }
 
     #boat {
         width: 50%;
         bottom: 20%;
+        will-change: all;
     }
     #GAWDSLink {
         position: fixed;
         bottom: 3.5rem;
         right: 1rem;
         font-size: 1rem;
-        font-family: 'Roboto', sans-serif;
-        } 
+        font-family: "Roboto", sans-serif;
+    }
     #GAWDSLink_svg {
         display: block;
         width: 4rem;
         height: auto;
         fill: #fff;
-        }
+    }
 }
 
 #GAWDSLink {
@@ -178,21 +202,21 @@ body, html {
     bottom: 1rem;
     right: 1rem;
     font-size: 1rem;
-    z-index:102;
+    z-index: 102;
     font-family: CoveredByYourGrace, Covered By Your Grace;
-    text-decoration:none;
-    color:#ffde75;
-    } 
-    svg {
+    text-decoration: none;
+    color: #ffde75;
+}
+svg {
     display: block;
     width: 12.8rem;
     height: auto;
     fill: $Yellow;
-    }
+}
 #GAWDSLink svg {
     display: block;
     width: 8rem;
     height: auto;
     fill: #fff;
-    z-index:102;
-    }
+    z-index: 102;
+}
