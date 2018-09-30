@@ -3,7 +3,7 @@ window.addEventListener("DOMContentLoaded", function() {
     boatAnimation();
     starAnimation();
     lightAnimation();
-    primeAnimation();
+    // primeAnimation();
     cloudAnimation();
     // boatTwoAnimation();
 });
@@ -51,7 +51,7 @@ function lightAnimation() {
     var time = new TimelineMax({ repeat: -1 });
     time.to("#light", 5, { scaleX: "0", ease: Power0.easeNone });
 
-    time.to("#light", 5, { scaleX: "-1", ease: Power0.easeNone });
+    time.to("#light", 5, { scaleX: "-0.5", ease: Power0.easeNone });
     time.to("#light", 5, { scaleX: "0", ease: Power0.easeNone });
     time.to("#light", 5, { scaleX: "1", ease: Power0.easeNone });
 }
