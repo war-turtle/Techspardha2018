@@ -1,6 +1,6 @@
 body,
 html {
-    overflow: hidden !important;
+    overflow-x: hidden !important;
     max-width: 100%;
 }
 
@@ -10,7 +10,7 @@ body {
 }
 
 .screen{
-    position: absolute;
+    position: relative;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -156,7 +156,7 @@ body {
 @media screen and (max-width: 720px) {
     body,
     html {
-        overflow: hidden !important;
+        overflow-x: hidden !important;
         max-width: 100%;
     }
 

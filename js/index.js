@@ -4,6 +4,8 @@ window.addEventListener("DOMContentLoaded", function() {
 });
 
 function animation() {
+    
+    document.getElementById("sponsor_container").style.display = "block";
     TweenMax.set(".loader", { display: "none" });
 
     boatAnimation();
