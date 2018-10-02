@@ -51,12 +51,17 @@ function calculateLightHousePosition() {
 
 function boatAnimation() {
     var boat = document.getElementById("boat");
-    TweenMax.to(boat, 10, { left: "10%", ease: Power3.easeOut, delay: 5 });
+    TweenMax.to(boat, 10, { left: "10%", ease: Power3.easeOut, delay: 5, onComplete: goDown });
     var time = new TimelineMax({ repeat: -1, delay: 15 });
     time.to(boat, 2, { rotationZ: "-=3deg", ease: Power0.easeNone });
     time.to(boat, 2, { rotationZ: "+=3deg", ease: Power0.easeNone });
     time.to(boat, 2, { rotationZ: "+=5deg", ease: Power0.easeNone });
     time.to(boat, 2, { rotationZ: "-=5deg", ease: Power0.easeNone });
+}
+
+function goDown(){
+    var goDown = document.getElementsByClassName("goDown")[0];
+    goDown.style.display = 'block';
 }
 
 function starAnimation() {
