@@ -1,2 +1,3 @@
-# Techspardha2018
-Techspardha 2018 comming soon webpage
+# Techspardha Prime
+Landing Page for Techspardha (A Techno-Managerial Fest of NIT KKR)
+
